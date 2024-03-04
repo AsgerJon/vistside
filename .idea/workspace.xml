@@ -4,78 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/_parse_float.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/_parse_hex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/_parse_parent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/_resize_filter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/_shibokinator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/_thread_field.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/_time_to_frequency.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/_types.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_abstract_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_action.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_action_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_convert_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_debug_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_edit_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_files_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_help_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_icon_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_menu_bar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_menu_field.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/_status_bar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/about_qt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/copy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/cut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/debug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/edit_menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/exit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/exit_img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/files.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/files_menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/help_menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/icons.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/locked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/microphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/minescript.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/paste.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/preferences.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/redo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/risitas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/save_as.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/screen_shot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/undo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/unlocked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/icons/workside.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/menumeta/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/menumeta/edit.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/menumeta/files.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/menumeta/help.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/actionmenus/menumeta/menus.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/factories/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/factories/_brush_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/factories/_color_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/factories/_font_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/factories/_pen_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_fill_widget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_plot_widget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_space_widget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_widget_field.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/_layout_window.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/_main_window.py" beforeDir="false" />
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Streamlining of descriptor implementations.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vistside.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vistside.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +33,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
@@ -125,6 +57,19 @@
       <option name="presentableId" value="Default" />
       <updated>1708257606670</updated>
     </task>
+    <task id="LOCAL-00001" summary="Streamlining of descriptor implementations.">
+      <option name="closed" value="true" />
+      <created>1709552323955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709552323955</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Streamlining of descriptor implementations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Streamlining of descriptor implementations." />
   </component>
 </project>
