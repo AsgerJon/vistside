@@ -3,19 +3,21 @@ name: Build and Publish to PyPI
 on:
   push:
     branches:
-      - main  # Or your default branch
+      - main  # Adjust this as necessary for your workflow triggers
   workflow_dispatch:
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3  # Updated to the latest version at the time of writing; please verify
+      with:
+        fetch-depth: 0  # Ensures tags are fetched as well
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3  # Updated to the latest version; please verify
       with:
-        python-version: '3.11'  # Adjust as needed
+        python-version: '3.11.8'  # Specify the Python version you need
 
     - name: Install Dependencies
       run: |
@@ -26,19 +28,26 @@ jobs:
       run: |
         python -m build --sdist --wheel --outdir dist/
 
-    - name: Publish to PyPI
+    - name: Publish distribution to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
         packages_dir: dist
-        skip_existing: true
+        skip-existing: true  # Corrected to kebab-case as per the new guidelines
+        repository_url: https://upload.pypi.org/legacy/
+        verify_metadata: true
+        verbose: false
+        print_hash: false
 
+    # Optional: Configure Git User for Commits made by this Workflow
     - name: Configure Git User Info
       run: |
         git config --local user.name "Asger Jon Vistisen"
         git config --local user.email "asgerjon2@gmail.com"
-
+    
+    # Optional: Push Git Tags, if your workflow involves tag creation
+    # Ensure you have a step to create tags before this step if necessary
     - name: Push Tags
       run: |
         git push && git push --tags
