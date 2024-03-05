@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Streamlining of descriptor implementations.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vistside.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vistside.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/publish.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_brush_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_brush_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_empty_brush.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_empty_brush.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_empty_pen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_empty_pen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_font_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_font_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_pen_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_pen_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_pen_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_pen_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_text_pen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_text_pen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_timer_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_timer_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_timer_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_timer_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_base_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_base_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709552323955</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Streamlining of descriptor implementations.">
+      <option name="closed" value="true" />
+      <created>1709654266827</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709654266827</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
