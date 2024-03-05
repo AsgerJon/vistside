@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3  # Updated to the latest version; please verify
       with:
-        python-version: '3.11.8'  # Specify the Python version you need
+        python-version: '3.12'  # Specify the Python version you need
 
     - name: Install Dependencies
       run: |
@@ -37,7 +37,7 @@ jobs:
         skip-existing: true  # Corrected to kebab-case as per the new guidelines
         repository_url: https://upload.pypi.org/legacy/
         verify_metadata: true
-        verbose: false
+        verbose: true
         print_hash: false
 
     # Optional: Configure Git User for Commits made by this Workflow
@@ -48,8 +48,8 @@ jobs:
     
     # Optional: Push Git Tags, if your workflow involves tag creation
     # Ensure you have a step to create tags before this step if necessary
-    - name: Push Tags
-      run: |
-        git push && git push --tags
-      env:
-        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    # - name: Push Tags
+    #   run: |
+    #     git push && git push --tags
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
