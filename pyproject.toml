@@ -4,14 +4,14 @@ build-backend = 'setuptools.build_meta'
 
 
 [project]
-name = "vistutils"
-version = "0.1.17"
+name = "vistside"
+version = "0.1.0"
 authors = [
   { name = "Asger Jon Vistisen", email = "asgerjon2@gmail.com" },
 ]
-description = "vistutils provides helpful utility functions"
+description = "vistside expands vistutils with utilities for PySide6"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 classifiers = [
   "Programming Language :: Python :: 3",
   "License :: OSI Approved :: MIT License",
@@ -19,5 +19,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/AsgerJon/vistutils"
-"Bug Tracker" = "https://github.com/AsgerJon/vistutils"
+"Homepage" = "https://github.com/AsgerJon/vistside"
+"Bug Tracker" = "https://github.com/AsgerJon/vistside"
