@@ -6,8 +6,7 @@ from __future__ import annotations
 from typing import Any
 
 from PySide6.QtGui import QPen
-
-from morevistutils import CoreDescriptor
+from vistutils.fields import CoreDescriptor
 
 
 class PenField(CoreDescriptor):

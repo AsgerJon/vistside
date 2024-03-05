@@ -6,11 +6,11 @@ from __future__ import annotations
 from typing import Any
 
 from PySide6.QtGui import QColor, QPen
+from vistutils.fields import StaticField
 from vistutils.parse import maybe
 from vistutils.waitaminute import typeMsg
 
-from morevistside.core import SolidLine, parseColor
-from morevistutils import StaticField
+from vistside.core import parseColor, SolidLine
 
 
 class TextPen(StaticField):

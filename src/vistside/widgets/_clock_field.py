@@ -6,13 +6,12 @@ from __future__ import annotations
 from typing import Any
 
 from PySide6.QtWidgets import QLCDNumber
+from vistutils.fields import CoreDescriptor
 from vistutils.text import stringList
 from vistutils.waitaminute import typeMsg
 
-from morevistutils import FlexField
 
-
-class ClockField(FlexField):
+class ClockField(CoreDescriptor):
   """ClockField provides a widget showing the time"""
 
   def _instantiate(self, instance: object, owner: type = None) -> Any:

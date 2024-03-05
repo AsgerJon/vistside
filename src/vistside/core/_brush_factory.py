@@ -8,7 +8,7 @@ from PySide6.QtGui import QBrush, QColor
 from vistutils.text import stringList
 from vistutils.parse import maybe
 
-from morevistside.core import parseColor
+from vistside.core import parseColor
 
 
 def _createBrush(*args, **kwargs) -> QBrush:

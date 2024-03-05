@@ -6,9 +6,9 @@ from __future__ import annotations
 from typing import Any
 
 from PySide6.QtGui import QBrush
+from vistutils.fields import CoreDescriptor
 
-from morevistside.core import parseBrush
-from morevistutils import CoreDescriptor
+from vistside.core import parseBrush
 
 
 class BrushField(CoreDescriptor):

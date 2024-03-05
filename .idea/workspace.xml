@@ -7,17 +7,40 @@
     <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Streamlining of descriptor implementations.">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vistside.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vistside.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_brush_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_brush_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_empty_brush.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_empty_brush.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_empty_pen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_empty_pen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_font_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_font_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_pen_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_pen_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_pen_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_pen_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_text_pen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_text_pen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_timer_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_timer_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_timer_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_timer_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_base_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_base_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file:///opt/miniconda3/envs/onlyside/lib/python3.12/site-packages/vistutils/fields/_core_descriptor.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,16 +54,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "update.copyright.on.save": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;,
+    &quot;update.copyright.on.save&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

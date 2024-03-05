@@ -6,7 +6,7 @@ from __future__ import annotations
 from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QWidget
 
-from morevistside.core import parseParent, TextPen, EmptyPen, EmptyBrush
+from vistside.core import TextPen, EmptyPen, EmptyBrush, parseParent
 
 
 class BaseWidget(QWidget):

@@ -3,8 +3,9 @@
 #  Copyright (c) 2024 Asger Jon Vistisen
 from __future__ import annotations
 
-from morevistside.core import parseFont
-from morevistutils import CoreDescriptor
+from vistutils.fields import CoreDescriptor
+
+from vistside.core import parseFont
 
 
 class FontField(CoreDescriptor):

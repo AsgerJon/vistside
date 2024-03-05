@@ -9,7 +9,7 @@ from PySide6.QtCore import QTimer, Qt
 from vistutils.parse import maybe
 from vistutils.text import stringList
 
-from morevistside.core import Precise
+from vistside.core import Precise
 
 
 def _parseArgs(*args, **kwargs) -> dict:

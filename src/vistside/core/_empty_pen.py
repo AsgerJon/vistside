@@ -5,8 +5,7 @@ from __future__ import annotations
 
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QPen, QColor
-
-from morevistutils import StaticField
+from vistutils.fields import StaticField
 
 
 class EmptyPen(StaticField):

@@ -8,7 +8,7 @@ from PySide6.QtGui import QColor, QPen
 from vistutils.text import stringList
 from vistutils.parse import maybe
 
-from morevistside.core import parseColor
+from vistside.core import parseColor
 
 
 def _createPen(*args, **kwargs) -> QPen:
