@@ -20,5 +20,6 @@ from ._font_field import FontField
 from ._empty_pen import EmptyPen
 from ._empty_brush import EmptyBrush
 from ._text_pen import TextPen
+from ._font_pen_field import FontPenField
 from ._timer_factory import parseTimer
 from ._timer_field import TimerField

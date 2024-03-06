@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Broadly replaced obsolete external references with internal ones.">
+      <change afterPath="$PROJECT_DIR$/src/vistside/core/_font_pen_field.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/core/_qt_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_qt_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_timer_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_timer_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_base_layout_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_base_layout_field.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_main_status_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_main_status_bar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709724669929</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Broadly replaced obsolete external references with internal ones.">
+      <option name="closed" value="true" />
+      <created>1709727938950</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709727938950</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -69,14 +69,16 @@ class BaseLayoutField(Wait):
           else:
             continue
           break
-        elif issubclass(val, QLayout):
-          layoutType = val
-          break
+        elif isinstance(val, type):
+          if issubclass(val, QLayout):
+            layoutType = val
+            break
     else:
       for arg in args:
-        if issubclass(arg, QLayout):
-          layoutType = arg
-          break
+        if isinstance(arg, type):
+          if issubclass(arg, QLayout):
+            layoutType = arg
+            break
       else:
         layoutType = BaseGrid
     Wait.__init__(self, layoutType, *args, **kwargs)

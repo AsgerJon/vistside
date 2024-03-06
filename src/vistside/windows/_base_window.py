@@ -51,10 +51,12 @@ class BaseWindow(QMainWindow):
   __help_menu__: HelpMenu = None
   __debug_menu__: DebugMenu = None
 
-  statusBar = Wait(MainStatusBar, )
+  mainStatusBar = Wait(MainStatusBar, )
 
   def __init__(self, ) -> None:
     QMainWindow.__init__(self)
+    self.setMinimumSize(640, 480)
+    self.setWindowTitle('Welcome to EZRos!')
     self.__main_menu_bar__ = QMenuBar(self)
     self.__files_menu__ = FilesMenu(self, 'Files')
     self.__edit_menu__ = EditMenu(self, 'Edit')
@@ -73,13 +75,14 @@ class BaseWindow(QMainWindow):
     self.__help_menu__.setupActions()
     self.__debug_menu__.setupActions()
     self.connectActions()
-    self.setStatusBar(self.statusBar)
+    self.setStatusBar(self.mainStatusBar)
     QMainWindow.show(self)
 
   def connectActions(self, ) -> None:
     """connectActions connects the actions to the status bar."""
     self.connectDebugActions()
     self.aboutQtAction.triggered.connect(QApplication.aboutQt)
+    self.exitAction.triggered.connect(QApplication.quit)
 
   def connectDebugActions(self, ) -> None:
     """connectDebugActions connects the debug actions to the status bar."""
@@ -97,7 +100,7 @@ class BaseWindow(QMainWindow):
   def debug01Func(self, ) -> None:
     """debug01Func provides a debug function for the window."""
     print('Debug01 action triggered!')
-    self.statusBar().showMessage('Debug01 action triggered!')
+    self.mainStatusBar.showMessage('Debug01 action triggered!')
 
   def debug02Func(self, ) -> None:
     """debug02Func provides a debug function for the window."""
