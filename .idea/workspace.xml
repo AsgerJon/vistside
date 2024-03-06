@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Adding in missing files." />
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Adding in missing files.">
+      <change afterPath="$PROJECT_DIR$/src/vistside/widgets/_base_layout_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_base_layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_confirm_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_confirm_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_fill_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_fill_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_grid_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_grid_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_horizontal_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_horizontal_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_jk_flip_flop.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_jk_flip_flop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_lcd_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_lcd_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_mouse_aware.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_mouse_aware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_quick_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_quick_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_safety_toggle_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_safety_toggle_button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_vertical_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_vertical_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_abstract_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_abstract_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_debug_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_debug_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_edit_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_edit_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_files_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_files_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_help_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_help_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_main_status_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_main_status_bar.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,16 +65,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;,
-    &quot;update.copyright.on.save&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/home/asger/PycharmProjects/vistside/main.py",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "update.copyright.on.save": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python">
+      <module name="vistside" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="onlyside" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

@@ -7,11 +7,10 @@ from __future__ import annotations
 from PySide6.QtCore import Signal, Slot
 from PySide6.QtGui import QMouseEvent
 
-from ezros.gui.shortnames import NoBtn
-from ezros.gui.widgets import BaseWidget, ButtonField
-from _dep.morevistutils import Flag, IntField
-from ezros.gui.shortnames import MouseBtn, LeftBtn, RightBtn, \
-  MiddleBtn, NextBtn, BackBtn
+from vistside.widgets import BaseWidget
+from vistutils.fields import Flag, IntField
+from vistside.core import MouseBtn, LeftBtn, RightBtn, \
+  MiddleBtn, NextBtn, BackBtn, NoBtn
 
 
 class MouseAware(BaseWidget):

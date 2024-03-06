@@ -6,13 +6,10 @@ from __future__ import annotations
 
 from PySide6.QtGui import QColor, QPaintEvent, QPainter
 
-from morevistside.core import FontField, \
-  PenField, \
-  Black, \
-  SolidLine, \
-  BrushField, Orange, SolidFill
-from morevistside.widgets import FillWidget
-from morevistutils import TextField
+from vistside.core import FontField, PenField, Black, SolidLine
+from vistside.core import BrushField, Orange, SolidFill
+from vistside.widgets import FillWidget
+from vistutils.fields import TextField
 
 
 class LabelWidget(FillWidget):
@@ -41,5 +38,5 @@ class LabelWidget(FillWidget):
     painter.drawRoundedRect(self.rect(), 4, 4, )
     painter.setFont(self.textFont)
     painter.setPen(self.fontPen)
-    
+
     painter.end()

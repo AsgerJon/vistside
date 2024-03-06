@@ -8,9 +8,8 @@ from typing import Callable
 from PySide6.QtWidgets import QStatusBar
 from icecream import ic
 
-from morevistside.core import parseParent
-from morevistside.widgets import ClockWidget
-from morevistutils import FlexField
+from vistside.core import parseParent
+from vistside.widgets import ClockWidget
 
 
 class DO:

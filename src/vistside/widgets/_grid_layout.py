@@ -5,7 +5,7 @@ from __future__ import annotations
 
 from PySide6.QtWidgets import QGridLayout
 
-from ezros.gui.shortnames import parseParent
+from vistside.core import parseParent
 
 
 class GridLayout(QGridLayout):

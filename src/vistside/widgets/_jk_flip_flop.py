@@ -9,7 +9,7 @@ from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout
 from PySide6.QtCore import Qt, QRect, Signal
 from PySide6.QtGui import QPainter, QBrush, QColor
 
-from ezros.gui.widgets import BaseWidget
+from vistside.widgets import BaseWidget
 
 
 class JKFlipFlop(BaseWidget):

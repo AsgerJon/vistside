@@ -10,8 +10,8 @@ from vistutils.parse import maybe
 from vistutils.text import stringList
 from vistutils.waitaminute import typeMsg
 
-from morevistside.core import KeyboardShortcuts, parseParent
-from morevistside.core.icons import getIcon
+from vistside.core import KeyboardShortcuts, parseParent
+from vistside.core.icons import getIcon
 
 
 class AbstractMenu(QMenu):

@@ -6,23 +6,39 @@ from __future__ import annotations
 from typing import Any
 
 from PySide6.QtGui import QBrush
-from vistutils.fields import CoreDescriptor
+from vistutils.fields import CoreDescriptor, Wait, unParseArgs
 
 from vistside.core import parseBrush
 
 
-class BrushField(CoreDescriptor):
+class Brush(QBrush):
+  """Subclass of QBrush with a custom constructor enabling interaction
+  with descriptors."""
+
+  def __init__(self, *args, **kwargs) -> None:
+    """Initializes the Brush."""
+    QBrush.__init__(self, *args, **kwargs)
+
+  @classmethod
+  def getDefault(cls, *args, **kwargs) -> Brush:
+    """Returns the default value for the field."""
+    defVal = cls()
+    defVal.apply((args, kwargs))
+    return defVal
+
+  def apply(self, value: Any) -> Brush:
+    """Applies the value to the field."""
+    args, kwargs = unParseArgs(value)
+    testBrush = QBrush(*args, **kwargs)
+    self.setStyle(testBrush.style())
+    self.setColor(testBrush.color())
+
+    return self
+
+
+class BrushField(Wait):
   """The BrushField class provides a descriptor for instances of QBrush."""
 
-  def _instantiate(self, instance: object) -> None:
-    """Instantiates the field."""
-    brush = parseBrush(*self._getArgs(), **self._getKwargs())
-    setattr(instance, self._getPrivateName(), brush)
-
-  def __set__(self, instance: object, value: Any) -> None:
-    """Sets the field."""
-
-    if not isinstance(value, QBrush):
-      e = """Value must be an instance of QBrush!"""
-      raise TypeError(e)
-    setattr(instance, self._getPrivateName(), value)
+  def __init__(self, *args, **kwargs) -> None:
+    """Initializes the BrushField."""
+    Wait.__init__(self, Brush, *args, **kwargs)

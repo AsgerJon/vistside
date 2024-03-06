@@ -21,7 +21,7 @@ class DescriptorException(Exception):
     the missing value. The getter is then called again, but  with a 
     recursion flag that raises a recursion error if again, the name is not 
     ready. """ % (instanceName, ownerClass, fieldName, descriptorClass)
-    Exception.__init__(e)
+    Exception.__init__(self, e)
 
 
 class QuickField:

@@ -3,7 +3,7 @@
 #  Copyright (c) 2024 Asger Jon Vistisen
 from __future__ import annotations
 
-from morevistside.windows.actions import AbstractMenu
+from vistside.windows.actions import AbstractMenu
 
 
 class HelpMenu(AbstractMenu):

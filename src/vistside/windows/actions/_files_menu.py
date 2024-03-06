@@ -5,7 +5,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from morevistside.windows.actions import AbstractMenu
+from vistside.windows.actions import AbstractMenu
 
 if TYPE_CHECKING:
   pass

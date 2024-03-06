@@ -11,7 +11,7 @@ from typing import Callable, Any
 from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QDialog
 
-from morevistside.widgets import AbstractDialogField
+from vistside.widgets import AbstractDialogField
 
 
 class ConfirmDialog(AbstractDialogField):

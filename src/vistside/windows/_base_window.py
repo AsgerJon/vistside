@@ -7,13 +7,10 @@ from __future__ import annotations
 from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QMainWindow, QMenuBar, QStatusBar, QApplication
 
-from morevistside.widgets import BaseWidget, ClockWidget
-from morevistside.windows.actions import FilesMenu, \
-  EditMenu, \
-  HelpMenu, \
-  MainStatusBar
-from morevistside.windows.actions import DebugMenu
-from morevistutils import FlexField
+from vistside.windows.actions import FilesMenu, EditMenu, HelpMenu
+from vistside.windows.actions import DebugMenu
+
+from vistside.widgets import BaseWidget
 
 
 class BaseWindow(QMainWindow):
@@ -47,8 +44,6 @@ class BaseWindow(QMainWindow):
   debug08Action: QAction
   debug09Action: QAction
   debug10Action: QAction
-
-  baseWidget = FlexField[BaseWidget](BaseWidget.getDefault, )
 
   __main_menu_bar__: QMenuBar = None
   __files_menu__: FilesMenu = None

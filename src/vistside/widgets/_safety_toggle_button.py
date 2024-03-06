@@ -7,8 +7,8 @@ from __future__ import annotations
 from PySide6.QtGui import QPainter, QPen, QBrush
 from PySide6.QtCore import QTimer, Qt, QPointF
 
-from ezros.gui.shortnames import parseParent
-from ezros.gui.widgets import BaseWidget
+from vistside.core import parseParent
+from vistside.widgets import (BaseWidget)
 
 
 class SafetyToggleButton(BaseWidget):
