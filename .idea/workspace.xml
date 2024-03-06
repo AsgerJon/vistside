@@ -4,32 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Adding in missing files.">
-      <change afterPath="$PROJECT_DIR$/src/vistside/widgets/_base_layout_field.py" afterDir="false" />
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Broadly replaced obsolete external references with internal ones.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vistside.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vistside.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_base_layout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_confirm_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_confirm_dialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_fill_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_fill_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_grid_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_grid_layout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_horizontal_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_horizontal_layout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_jk_flip_flop.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_jk_flip_flop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_lcd_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_lcd_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_mouse_aware.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_mouse_aware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_quick_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_quick_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_safety_toggle_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_safety_toggle_button.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_vertical_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_vertical_layout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_abstract_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_abstract_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_debug_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_debug_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_edit_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_edit_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_files_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_files_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_help_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_help_menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_main_status_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_main_status_bar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,18 +44,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/home/asger/PycharmProjects/vistside/main.py",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
-    "update.copyright.on.save": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/asger/PycharmProjects/vistside/main.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;update.copyright.on.save&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
       <module name="vistside" />
@@ -87,7 +66,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="onlyside" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -150,12 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1709655787118</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Broadly replaced obsolete external references with internal ones.">
+      <option name="closed" value="true" />
+      <created>1709718591943</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718591943</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Streamlining of descriptor implementations." />
     <MESSAGE value="Adding in missing files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding in missing files." />
+    <MESSAGE value="Broadly replaced obsolete external references with internal ones." />
+    <option name="LAST_COMMIT_MESSAGE" value="Broadly replaced obsolete external references with internal ones." />
   </component>
 </project>

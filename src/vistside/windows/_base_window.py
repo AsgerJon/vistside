@@ -5,12 +5,12 @@ window. """
 from __future__ import annotations
 
 from PySide6.QtGui import QAction
-from PySide6.QtWidgets import QMainWindow, QMenuBar, QStatusBar, QApplication
+from PySide6.QtWidgets import QMainWindow, QMenuBar, QApplication, QStatusBar
+from vistutils.fields import Wait
 
-from vistside.windows.actions import FilesMenu, EditMenu, HelpMenu
+from vistside.windows.actions import FilesMenu, EditMenu, HelpMenu, \
+  MainStatusBar
 from vistside.windows.actions import DebugMenu
-
-from vistside.widgets import BaseWidget
 
 
 class BaseWindow(QMainWindow):
@@ -51,6 +51,8 @@ class BaseWindow(QMainWindow):
   __help_menu__: HelpMenu = None
   __debug_menu__: DebugMenu = None
 
+  statusBar = Wait(MainStatusBar, )
+
   def __init__(self, ) -> None:
     QMainWindow.__init__(self)
     self.__main_menu_bar__ = QMenuBar(self)
@@ -71,6 +73,7 @@ class BaseWindow(QMainWindow):
     self.__help_menu__.setupActions()
     self.__debug_menu__.setupActions()
     self.connectActions()
+    self.setStatusBar(self.statusBar)
     QMainWindow.show(self)
 
   def connectActions(self, ) -> None:
