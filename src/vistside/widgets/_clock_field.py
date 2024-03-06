@@ -3,8 +3,8 @@
 #  Copyright (c) 2024 Asger Jon Vistisen
 from __future__ import annotations
 
-from vistutils.fields import CoreDescriptor
+from vistutils.fields import Wait
 
 
-class ClockField(CoreDescriptor):
+class ClockField(Wait):
   """ClockField provides a widget showing the time"""

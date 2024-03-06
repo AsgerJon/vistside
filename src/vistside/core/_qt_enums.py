@@ -8,6 +8,7 @@ from PySide6.QtGui import QMouseEvent
 from PySide6.QtWidgets import QSizePolicy
 
 #  Timer types
+TimerType = Qt.TimerType
 Precise = Qt.TimerType.PreciseTimer
 Coarse = Qt.TimerType.CoarseTimer
 VeryCoarse = Qt.TimerType.VeryCoarseTimer
@@ -54,4 +55,5 @@ __all__ = ['Precise', 'Coarse', 'VeryCoarse', 'Left', 'Right', 'Top',
            'DotLine', 'DashDotLine', 'DashDotDotLine', 'EmptyLine',
            'RoundCap', 'FlatCap', 'SquareCap', 'SolidFill', 'Spread',
            'Fixed', 'Tight', 'NoBtn', 'MouseBtn', 'LeftBtn', 'RightBtn',
-           'MiddleBtn', 'NextBtn', 'BackBtn']
+           'MiddleBtn', 'NextBtn', 'BackBtn', 'Mouse', 'BtnDown', 'BtnUp',
+           'MouseMove', 'TimerType']
