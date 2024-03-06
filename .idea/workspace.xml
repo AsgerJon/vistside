@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Streamlining of descriptor implementations.">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/publish.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Adding in missing files." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,11 +80,28 @@
       <option name="project" value="LOCAL" />
       <updated>1709654266827</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Streamlining of descriptor implementations.">
+      <option name="closed" value="true" />
+      <created>1709655758233</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709655758233</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding in missing files.">
+      <option name="closed" value="true" />
+      <created>1709655787118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709655787118</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Streamlining of descriptor implementations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Streamlining of descriptor implementations." />
+    <MESSAGE value="Adding in missing files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding in missing files." />
   </component>
 </project>
