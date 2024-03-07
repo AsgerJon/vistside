@@ -4,10 +4,12 @@
 from __future__ import annotations
 import os
 import sys
+from time import sleep
 
 from PySide6.QtWidgets import QApplication
 from icecream import ic
 
+from vistside.core._data_roll import DataRoll
 from vistside.windows import BaseWindow
 
 ic.configureOutput(includeContext=True)
@@ -26,6 +28,15 @@ def tester01() -> None:
   main = BaseWindow()
   main.show()
   app.exec()
+
+
+def tester02() -> None:
+  """Test DataRoll class if correctly rolls."""
+  roll = DataRoll()
+  for i in range(32):
+    roll.append(float(i))
+    print(roll)
+    sleep(0.1)
 
 
 if __name__ == '__main__':

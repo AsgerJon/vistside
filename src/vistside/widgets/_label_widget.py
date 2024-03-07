@@ -60,6 +60,4 @@ class LabelWidget(FillWidget):
     painter.setBrush(self.emptyBrush)
     painter.drawRoundedRect(self.rect(), 4, 4, )
     painter.setFont(self.textFont)
-    painter.setPen(self.fontPen)
-
     painter.end()

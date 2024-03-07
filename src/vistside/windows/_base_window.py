@@ -4,10 +4,14 @@ window. """
 #  Copyright (c) 2024 Asger Jon Vistisen
 from __future__ import annotations
 
+import numpy as np
 from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QMainWindow, QMenuBar, QApplication, QStatusBar
 from vistutils.fields import Wait
 
+from vistside.core import generateWhiteNoise, TimerField, Precise
+from vistside.widgets import PlotWidget, BaseLayoutField, BaseWidget, \
+  DynamicPlotWidget
 from vistside.windows.actions import FilesMenu, EditMenu, HelpMenu, \
   MainStatusBar
 from vistside.windows.actions import DebugMenu
@@ -52,11 +56,17 @@ class BaseWindow(QMainWindow):
   __debug_menu__: DebugMenu = None
 
   mainStatusBar = Wait(MainStatusBar, )
+  baseWidget = Wait(BaseWidget, )
+  baseLayout = BaseLayoutField('vertical')
+  paintTimer = TimerField(20, Precise, singleShot=False)
+  dataView = Wait(DynamicPlotWidget, )
 
   def __init__(self, ) -> None:
     QMainWindow.__init__(self)
     self.setMinimumSize(640, 480)
     self.setWindowTitle('Welcome to EZRos!')
+    self.timePlot = None
+    self.freqPlot = None
     self.__main_menu_bar__ = QMenuBar(self)
     self.__files_menu__ = FilesMenu(self, 'Files')
     self.__edit_menu__ = EditMenu(self, 'Edit')
@@ -65,17 +75,19 @@ class BaseWindow(QMainWindow):
 
   def show(self) -> None:
     """show displays the window."""
-    self.__main_menu_bar__.addMenu(self.__files_menu__)
-    self.__main_menu_bar__.addMenu(self.__edit_menu__)
-    self.__main_menu_bar__.addMenu(self.__help_menu__)
-    self.__main_menu_bar__.addMenu(self.__debug_menu__)
-    self.setMenuBar(self.__main_menu_bar__)
-    self.__files_menu__.setupActions()
-    self.__edit_menu__.setupActions()
-    self.__help_menu__.setupActions()
-    self.__debug_menu__.setupActions()
+    n, f = 1024, 10000
+    t = np.linspace(0, 1, n)
+    x = generateWhiteNoise(n, f)
+    x -= x.min()
+    x /= x.max()
     self.connectActions()
     self.setStatusBar(self.mainStatusBar)
+    self.timePlot = PlotWidget(t, x)
+    self.freqPlot = PlotWidget(t, np.fft.fft(x))
+    self.baseLayout.addWidget(self.timePlot)
+    self.baseLayout.addWidget(self.freqPlot)
+    self.baseWidget.setLayout(self.baseLayout)
+    self.setCentralWidget(self.baseWidget)
     QMainWindow.show(self)
 
   def connectActions(self, ) -> None:
@@ -86,6 +98,15 @@ class BaseWindow(QMainWindow):
 
   def connectDebugActions(self, ) -> None:
     """connectDebugActions connects the debug actions to the status bar."""
+    self.__main_menu_bar__.addMenu(self.__files_menu__)
+    self.__main_menu_bar__.addMenu(self.__edit_menu__)
+    self.__main_menu_bar__.addMenu(self.__help_menu__)
+    self.__main_menu_bar__.addMenu(self.__debug_menu__)
+    self.setMenuBar(self.__main_menu_bar__)
+    self.__files_menu__.setupActions()
+    self.__edit_menu__.setupActions()
+    self.__help_menu__.setupActions()
+    self.__debug_menu__.setupActions()
     self.debug01Action.triggered.connect(self.debug01Func)
     self.debug02Action.triggered.connect(self.debug02Func)
     self.debug03Action.triggered.connect(self.debug03Func)

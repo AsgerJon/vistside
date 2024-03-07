@@ -10,3 +10,5 @@ from ._lcd_field import LCDField
 from ._clock_widget import ClockWidget, ClockField
 from ._abstract_dialog_field import AbstractDialogField
 from ._confirm_dialog import ConfirmDialog
+from ._plot_widget import PlotWidget
+from ._dynamic_plot_widget import DynamicPlotWidget

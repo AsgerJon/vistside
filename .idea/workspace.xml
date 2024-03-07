@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Broadly replaced obsolete external references with internal ones.">
-      <change afterPath="$PROJECT_DIR$/src/vistside/core/_font_pen_field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vistside/core/_array_field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vistside/core/_data_roll.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vistside/core/_right_now_field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vistside/core/_white_noisinator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vistside/widgets/_dynamic_plot_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vistside/widgets/_plot_widget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_qt_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_qt_enums.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_base_layout_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_base_layout_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_clock_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_base_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_base_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_fill_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_fill_widget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/actions/_main_status_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/actions/_main_status_bar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +37,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file:///opt/miniconda3/envs/onlyside/lib/python3.12/site-packages/vistutils/fields/_core_descriptor.py" root0="FORCE_HIGHLIGHTING" />
@@ -58,7 +61,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/asger/PycharmProjects/vistside/main.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
     &quot;update.copyright.on.save&quot;: &quot;true&quot;
   }
 }</component>
@@ -158,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709727938950</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Broadly replaced obsolete external references with internal ones.">
+      <option name="closed" value="true" />
+      <created>1709737617226</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709737617226</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

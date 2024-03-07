@@ -3,8 +3,11 @@
 #  Copyright (c) 2024 Asger Jon Vistisen
 from __future__ import annotations
 
+from typing import Any, Self
+
 from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QWidget
+from vistutils.fields import unParseArgs
 
 from vistside.core import TextPen, EmptyPen, EmptyBrush, parseParent
 
@@ -31,7 +34,12 @@ class BaseWidget(QWidget):
     parent = parseParent(*args)
     QWidget.__init__(self, parent)
 
-  @staticmethod
-  def getDefault(self, *args, **kwargs) -> BaseWidget:
+  @classmethod
+  def getDefault(cls, *args, **kwargs) -> Self:
     """Creates a default instance"""
     return BaseWidget()
+
+  def apply(self, value: Any) -> Self:
+    """Applies the value to the field."""
+    args, kwargs = unParseArgs(value)
+    return self

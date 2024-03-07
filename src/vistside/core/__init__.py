@@ -10,6 +10,10 @@ from ._align_enum import AlignmentEnum
 from ._colors import *  # Only acceptable use of wildcard import
 from ._qt_enums import *  # Only acceptable use of wildcard import
 
+from ._white_noisinator import generateWhiteNoise, interpolateWhiteNoise
+from ._array_field import ArrayField
+from ._right_now_field import RightNowField
+from ._data_roll import DataRoll, DataRollField
 from ._color_factory import parseColor
 from ._brush_factory import parseBrush
 from ._brush_field import BrushField
