@@ -74,17 +74,22 @@ class BaseWindow(QMainWindow):
 
   def show(self) -> None:
     """show displays the window."""
-    n, f = 1024, 10000
-    t = np.linspace(0, 1, n)
-    x = generateWhiteNoise(n, f)
-    x -= x.min()
-    x /= x.max()
-    self.connectActions()
-    self.setStatusBar(self.mainStatusBar)
-    self.timePlot = PlotWidget(t, x)
-    self.freqPlot = PlotWidget(t, np.fft.fft(x))
-    self.baseLayout.addWidget(self.timePlot)
-    self.baseLayout.addWidget(self.freqPlot)
+    # n, f = 1024, 10000
+    # t = np.linspace(0, 1, n)
+    # x = generateWhiteNoise(n, f)
+    # x -= x.min()
+    # x /= x.max()
+    # self.connectActions()
+    # self.setStatusBar(self.mainStatusBar)
+    # self.timePlot = PlotWidget(t, x)
+    # f = np.fft.fft(x)
+    # realSum = f.real.sum().item()
+    # imagSum = f.imag.sum().item()
+    # print("""FFT sum of real part: '%.3f'""" % realSum)
+    # print("""FFT sum of imag part: '%.3f'""" % imagSum)
+    # self.freqPlot = PlotWidget(t, f.real)
+    # self.baseLayout.addWidget(self.timePlot)
+    # self.baseLayout.addWidget(self.freqPlot)
     self.baseWidget.setLayout(self.baseLayout)
     self.setCentralWidget(self.baseWidget)
     QMainWindow.show(self)

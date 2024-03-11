@@ -29,7 +29,7 @@ class Brush(QBrush):
   def apply(self, value: Any) -> Brush:
     """Applies the value to the field."""
     args, kwargs = unParseArgs(value)
-    testBrush = QBrush(*args, **kwargs)
+    testBrush = parseBrush(*args, **kwargs)
     self.setStyle(testBrush.style())
     self.setColor(testBrush.color())
 

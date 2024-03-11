@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Broadly replaced obsolete external references with internal ones.">
-      <change afterPath="$PROJECT_DIR$/src/vistside/windows/_layout_window.py" afterDir="false" />
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Working on widget descriptors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_font_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_font_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_clock_field.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_brush_field.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/asger/PycharmProjects/vistside/main.py",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "update.copyright.on.save": "true"
   }
 }]]></component>
@@ -173,13 +167,22 @@
       <option name="project" value="LOCAL" />
       <updated>1709828943108</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Working on widget descriptors">
+      <option name="closed" value="true" />
+      <created>1710152350631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710152350631</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Streamlining of descriptor implementations." />
     <MESSAGE value="Adding in missing files." />
     <MESSAGE value="Broadly replaced obsolete external references with internal ones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Broadly replaced obsolete external references with internal ones." />
+    <MESSAGE value="Working on widget descriptors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on widget descriptors" />
   </component>
 </project>

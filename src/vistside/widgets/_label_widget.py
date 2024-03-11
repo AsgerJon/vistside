@@ -7,7 +7,7 @@ from __future__ import annotations
 from typing import Self
 from warnings import warn
 
-from PySide6.QtCore import QRect, QPoint
+from PySide6.QtCore import QRect, QPoint, QMargins
 from PySide6.QtGui import QColor, QPaintEvent, QPainter
 from vistutils.text import monoSpace
 from vistutils.fields import TextField, Wait, unParseArgs
@@ -40,9 +40,13 @@ class LabelWidget(BaseWidget):
     painter = QPainter()
     painter.begin(self)
     viewRect = painter.viewport()
-    borderRect = viewRect.marginsRemoved(self.borderPen.width() * 2)
+    b = self.borderPen.width() * 2
+    borderMargins = QMargins(b, b, b, b)
+    borderRect = viewRect.marginsRemoved(borderMargins)
     borderRect.moveCenter(viewRect.center())
-    textSpace = borderRect.marginsRemoved(4)
+    b = self.textBorderPen.width() * 2
+    textBorderMargins = QMargins(b, b, b, b)
+    textSpace = borderRect.marginsRemoved(textBorderMargins)
     painter.setRenderHint(QPainter.Antialiasing)
     # # # # # # # # # # # # # # # # #
     #  fill background
