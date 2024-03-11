@@ -59,9 +59,8 @@ class BaseWindow(QMainWindow):
   baseWidget = Wait(BaseWidget, )
   baseLayout = BaseLayoutField('vertical')
   paintTimer = TimerField(20, Precise, singleShot=False)
-  dataView = Wait(DynamicPlotWidget, )
 
-  def __init__(self, ) -> None:
+  def __init__(self, *args, **kwargs) -> None:
     QMainWindow.__init__(self)
     self.setMinimumSize(640, 480)
     self.setWindowTitle('Welcome to EZRos!')

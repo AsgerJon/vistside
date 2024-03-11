@@ -19,7 +19,7 @@ from ._brush_factory import parseBrush
 from ._brush_field import BrushField
 from ._pen_factory import parsePen
 from ._pen_field import PenField
-from ._font_factory import parseFont
+from ._font_factory import resolveFontFamily, parseFont
 from ._font_field import FontField
 from ._empty_pen import EmptyPen
 from ._empty_brush import EmptyBrush

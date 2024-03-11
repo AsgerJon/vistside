@@ -10,7 +10,7 @@ from PySide6.QtWidgets import QApplication
 from icecream import ic
 
 from vistside.core._data_roll import DataRoll
-from vistside.windows import BaseWindow
+from vistside.windows import BaseWindow, LayoutWindow
 
 ic.configureOutput(includeContext=True)
 
@@ -25,7 +25,7 @@ def tester00() -> None:
 def tester01() -> None:
   """Hello world"""
   app = QApplication()
-  main = BaseWindow()
+  main = LayoutWindow()
   main.show()
   app.exec()
 

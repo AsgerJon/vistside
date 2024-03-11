@@ -5,3 +5,4 @@ application window as well as dialogs."""
 from __future__ import annotations
 
 from ._base_window import BaseWindow
+from ._layout_window import LayoutWindow
