@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Setting minimum size on label field">
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Label fields should never wrap. That requires more complicated logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" afterDir="false" />
     </list>
@@ -230,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710251296860</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Label fields should never wrap. That requires more complicated logic">
+      <option name="closed" value="true" />
+      <created>1710251803317</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1710251803317</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -241,6 +249,7 @@
     <MESSAGE value="Fixing incomplete pen descriptor implementation" />
     <MESSAGE value="Adding missing icons" />
     <MESSAGE value="Setting minimum size on label field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting minimum size on label field" />
+    <MESSAGE value="Label fields should never wrap. That requires more complicated logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Label fields should never wrap. That requires more complicated logic" />
   </component>
 </project>
