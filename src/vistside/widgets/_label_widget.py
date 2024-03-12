@@ -35,6 +35,10 @@ class LabelWidget(BaseWidget):
     """Initializes the LabelWidget."""
     BaseWidget.__init__(self, *args, **kwargs)
     self.innerText = 'Label' if text is None else text
+    fontMetrics = QFontMetrics(self.textFont)
+    textRect = fontMetrics.tightBoundingRect(self.innerText)
+    textSize = (textRect + QMargins(8, 1, 8, 1)).size()
+    self.setMinimumSize(textSize)
 
   def paintEvent(self, event: QPaintEvent) -> None:
     """Paints the widget."""
