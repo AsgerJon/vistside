@@ -7,8 +7,8 @@ from __future__ import annotations
 from typing import Self
 from warnings import warn
 
-from PySide6.QtCore import QRect, QPoint, QMargins
-from PySide6.QtGui import QColor, QPaintEvent, QPainter
+from PySide6.QtCore import QRect, QPoint, QMargins, QSize
+from PySide6.QtGui import QColor, QPaintEvent, QPainter, QFontMetrics
 from vistutils.text import monoSpace
 from vistutils.fields import TextField, Wait, unParseArgs
 
@@ -34,6 +34,12 @@ class LabelWidget(BaseWidget):
     """Initializes the LabelWidget."""
     BaseWidget.__init__(self, *args, **kwargs)
     self.innerText = 'Label' if text is None else text
+
+  def sizeHint(self) -> QSize:
+    """Returns the size hint for the widget."""
+    fontMetrics = QFontMetrics(self.textFont)
+    textRect = fontMetrics.boundingRect(self.innerText)
+    return textRect.size()
 
   def paintEvent(self, event: QPaintEvent) -> None:
     """Paints the widget."""
