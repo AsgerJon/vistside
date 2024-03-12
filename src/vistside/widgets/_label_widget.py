@@ -36,17 +36,8 @@ class LabelWidget(BaseWidget):
     BaseWidget.__init__(self, *args, **kwargs)
     self.innerText = 'Label' if text is None else text
 
-  def sizeHint(self) -> QSize:
-    """Returns the size hint for the widget."""
-    font = QFont(self.textFont)
-    font.setPointSize(font.pointSize() + 10)
-    fontMetrics = QFontMetrics(self.textFont)
-    textRect = fontMetrics.boundingRect(self.innerText)
-    return textRect.size()
-
   def paintEvent(self, event: QPaintEvent) -> None:
     """Paints the widget."""
-    self.setMinimumSize(self.sizeHint())
     painter = QPainter()
     painter.begin(self)
     viewRect = painter.viewport()
