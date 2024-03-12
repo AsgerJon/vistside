@@ -70,8 +70,9 @@ class LabelWidget(BaseWidget):
     #  Calculate required size for text
     painter.setFont(self.textFont)
     painter.setPen(self.textPen)
-    textSize = painter.boundingRect(
+    realTextSize = painter.boundingRect(
       textSpace, NoWrap, self.innerText).size()
+    textSize = QSize(realTextSize.width() + 6, realTextSize.height())
     # # # # # # # # # # # # # # # # #
     #  Align text rectangle
     if self.hAlign.lower() == 'center':
@@ -96,6 +97,8 @@ class LabelWidget(BaseWidget):
       raise ValueError(monoSpace(e))
     textTopLeft = QPoint(left, top)
     textRect = QRect(textTopLeft, textSize)
+    realTextRect = QRect(QPoint(0, 0), realTextSize)
+    realTextRect.moveCenter(textRect.center())
     # # # # # # # # # # # # # # # # #
     #  Fill text background
     painter.setPen(self.emptyPen)
@@ -110,7 +113,7 @@ class LabelWidget(BaseWidget):
     #  Print text
     painter.setFont(self.textFont)
     painter.setPen(self.textPen)
-    painter.drawText(textRect, NoWrap, self.innerText)
+    painter.drawText(realTextRect, NoWrap, self.innerText)
     painter.end()
 
   @classmethod
