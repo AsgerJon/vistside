@@ -5,6 +5,7 @@ window. """
 from __future__ import annotations
 
 import numpy as np
+from PySide6.QtCore import Signal
 from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QMainWindow, QMenuBar, QApplication, QStatusBar
 from vistutils.fields import Wait
@@ -55,6 +56,8 @@ class BaseWindow(QMainWindow):
   __help_menu__: HelpMenu = None
   __debug_menu__: DebugMenu = None
 
+  showSignal = Signal()
+
   mainStatusBar = Wait(MainStatusBar, )
   baseWidget = Wait(BaseWidget, )
   baseLayout = BaseLayoutField('vertical')
@@ -74,34 +77,16 @@ class BaseWindow(QMainWindow):
 
   def show(self) -> None:
     """show displays the window."""
-    # n, f = 1024, 10000
-    # t = np.linspace(0, 1, n)
-    # x = generateWhiteNoise(n, f)
-    # x -= x.min()
-    # x /= x.max()
-    # self.connectActions()
-    # self.setStatusBar(self.mainStatusBar)
-    # self.timePlot = PlotWidget(t, x)
-    # f = np.fft.fft(x)
-    # realSum = f.real.sum().item()
-    # imagSum = f.imag.sum().item()
-    # print("""FFT sum of real part: '%.3f'""" % realSum)
-    # print("""FFT sum of imag part: '%.3f'""" % imagSum)
-    # self.freqPlot = PlotWidget(t, f.real)
-    # self.baseLayout.addWidget(self.timePlot)
-    # self.baseLayout.addWidget(self.freqPlot)
+    self.setupMenus()
+    self.connectActions()
+    self.setStatusBar(self.mainStatusBar)
     self.baseWidget.setLayout(self.baseLayout)
     self.setCentralWidget(self.baseWidget)
     QMainWindow.show(self)
+    self.showSignal.emit()
 
-  def connectActions(self, ) -> None:
-    """connectActions connects the actions to the status bar."""
-    self.connectDebugActions()
-    self.aboutQtAction.triggered.connect(QApplication.aboutQt)
-    self.exitAction.triggered.connect(QApplication.quit)
-
-  def connectDebugActions(self, ) -> None:
-    """connectDebugActions connects the debug actions to the status bar."""
+  def setupMenus(self, ) -> None:
+    """Function responsible for setting up menus."""
     self.__main_menu_bar__.addMenu(self.__files_menu__)
     self.__main_menu_bar__.addMenu(self.__edit_menu__)
     self.__main_menu_bar__.addMenu(self.__help_menu__)
@@ -111,6 +96,15 @@ class BaseWindow(QMainWindow):
     self.__edit_menu__.setupActions()
     self.__help_menu__.setupActions()
     self.__debug_menu__.setupActions()
+
+  def connectActions(self, ) -> None:
+    """connectActions connects the actions to the status bar."""
+    self.connectDebugActions()
+    self.aboutQtAction.triggered.connect(QApplication.aboutQt)
+    self.exitAction.triggered.connect(QApplication.quit)
+
+  def connectDebugActions(self, ) -> None:
+    """connectDebugActions connects the debug actions to the status bar."""
     self.debug01Action.triggered.connect(self.debug01Func)
     self.debug02Action.triggered.connect(self.debug02Func)
     self.debug03Action.triggered.connect(self.debug03Func)

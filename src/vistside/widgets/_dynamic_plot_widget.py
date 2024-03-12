@@ -24,8 +24,7 @@ class DynamicPlotWidget(BaseWidget):
 
   def __init__(self, *args, **kwargs) -> None:
     """Initializes the widget."""
-    parent = parseParent(*args)
-    BaseWidget.__init__(self, parent)
+    BaseWidget.__init__(self, *args, **kwargs)
     self.current_index = 0
 
     # Chart setup
@@ -56,5 +55,6 @@ class DynamicPlotWidget(BaseWidget):
   def updateSlot(self) -> None:
     """Updates the plot visualization."""
     self.series.clear()
-    self.series.append(self.dataRoll.real, self.dataRoll.imag)
-    self.chart.update()
+    self.series.appendNp(self.dataRoll.real, self.dataRoll.imag)
+    # self.chart.update()
+    self.update()

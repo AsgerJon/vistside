@@ -42,8 +42,9 @@ class ArrayField(MutableDescriptor):
 
   def _instantiate(self, instance: object) -> None:
     """Instantiates the field."""
+    n = getattr(instance, 'arrayLength', self.__fallback_num_data__)
     pvtName = self._getPrivateName()
-    array = np.full((self.numData,), np.nan, dtype=complex)
+    array = np.full((n,), np.nan, dtype=complex)
     setattr(instance, self._getPrivateName(), array)
 
   def __get__(self, instance: object, owner: type, **kwargs) -> Any:

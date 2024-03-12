@@ -4,13 +4,11 @@ another."""
 #  Copyright (c) 2024 Asger Jon Vistisen
 from __future__ import annotations
 
-import time
 from typing import Callable, Any
 
 import numpy as np
 from icecream import ic
-from vistutils.fields import MutableDescriptor, unParseArgs
-from vistutils.text import stringList
+from vistutils.fields import unParseArgs, Wait, IntField
 from vistutils.waitaminute import typeMsg
 
 from vistside.core import ArrayField, RightNowField
@@ -43,6 +41,7 @@ class DataRoll:
   real = _Re()
   rightNow = RightNowField()
   array = ArrayField(16)
+  arrayLength = IntField(64)
 
   def __init__(self, *args, **kwargs) -> None:
     self.__callback_functions__ = []
@@ -115,15 +114,14 @@ class DataRoll:
   def apply(self, value: Any) -> DataRoll:
     """Applies the value to the field."""
     args, kwargs = unParseArgs(value)
+    for arg in args:
+      if isinstance(arg, int):
+        self.arrayLength = arg
     return self
 
 
-class DataRollField(MutableDescriptor):
+class DataRollField(Wait):
   """Wraps the DataRoll in a mutable descriptor class"""
 
   def __init__(self, *args, **kwargs) -> None:
-    MutableDescriptor.__init__(self, DataRoll, *args, **kwargs)
-
-  def __get__(self, *args, **kwargs) -> DataRoll:
-    """Returns the value of the field."""
-    return super().__get__(*args, **kwargs)
+    Wait.__init__(self, DataRoll, *args, **kwargs)

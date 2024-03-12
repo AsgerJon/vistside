@@ -3,7 +3,6 @@
 #  Copyright (c) 2024 Asger Jon Vistisen
 from __future__ import annotations
 
-from vistside.core import parseParent
 from vistside.widgets import LabelField
 from vistside.windows import BaseWindow
 
@@ -12,7 +11,7 @@ class LayoutWindow(BaseWindow):
   """LayoutWindow subclasses the BaseWindow and provides the visual
   layouts."""
 
-  welcomeBanner = LabelField('Yolo!', 36)
+  welcomeBanner = LabelField('Dynamic Plot Widget!', 36)
 
   def __init__(self, *args, **kwargs) -> None:
     BaseWindow.__init__(self, *args, **kwargs)
@@ -23,3 +22,7 @@ class LayoutWindow(BaseWindow):
     layout and then call the parent show method."""
     self.baseLayout.addWidget(self.welcomeBanner)
     BaseWindow.show(self)
+
+  def connectActions(self, ) -> None:
+    """Connects the actions to the window."""
+    BaseWindow.connectActions(self)
