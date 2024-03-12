@@ -43,6 +43,7 @@ class LabelWidget(BaseWidget):
 
   def paintEvent(self, event: QPaintEvent) -> None:
     """Paints the widget."""
+    self.setMinimumSize(self.sizeHint())
     painter = QPainter()
     painter.begin(self)
     viewRect = painter.viewport()
