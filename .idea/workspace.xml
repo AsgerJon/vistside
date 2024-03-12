@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Working on widget descriptors">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_pen_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_pen_field.py" afterDir="false" />
-    </list>
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Fixing incomplete pen descriptor implementation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710244634901</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixing incomplete pen descriptor implementation">
+      <option name="closed" value="true" />
+      <created>1710249091003</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710249091003</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,6 +202,7 @@
     <MESSAGE value="Adding in missing files." />
     <MESSAGE value="Broadly replaced obsolete external references with internal ones." />
     <MESSAGE value="Working on widget descriptors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on widget descriptors" />
+    <MESSAGE value="Fixing incomplete pen descriptor implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing incomplete pen descriptor implementation" />
   </component>
 </project>
