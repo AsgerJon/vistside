@@ -12,7 +12,9 @@ from PySide6.QtGui import QColor, QPaintEvent, QPainter, QFontMetrics
 from vistutils.text import monoSpace
 from vistutils.fields import TextField, Wait, unParseArgs
 
-from vistside.core import FontField, PenField, SolidLine, resolveFontFamily
+from vistside.core import (FontField, PenField, SolidLine,
+                           resolveFontFamily, \
+                           NoWrap)
 from vistside.core import BrushField, SolidFill, Yellow, WordWrap
 from vistside.widgets import BaseWidget
 
@@ -109,7 +111,7 @@ class LabelWidget(BaseWidget):
     #  Print text
     painter.setFont(self.textFont)
     painter.setPen(self.textPen)
-    painter.drawText(textRect, WordWrap, self.innerText)
+    painter.drawText(textRect, NoWrap, self.innerText)
     painter.end()
 
   @classmethod
