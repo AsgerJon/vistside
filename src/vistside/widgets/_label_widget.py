@@ -7,8 +7,8 @@ from __future__ import annotations
 from typing import Self
 from warnings import warn
 
-from PySide6.QtCore import QRect, QPoint, QMargins, QSize
-from PySide6.QtGui import QColor, QPaintEvent, QPainter, QFontMetrics
+from PySide6.QtCore import QRect, QPoint, QMargins, QSize, Qt
+from PySide6.QtGui import QColor, QPaintEvent, QPainter, QFontMetrics, QFont
 from vistutils.text import monoSpace
 from vistutils.fields import TextField, Wait, unParseArgs
 
@@ -38,6 +38,8 @@ class LabelWidget(BaseWidget):
 
   def sizeHint(self) -> QSize:
     """Returns the size hint for the widget."""
+    font = QFont(self.textFont)
+    font.setPointSize(font.pointSize() + 10)
     fontMetrics = QFontMetrics(self.textFont)
     textRect = fontMetrics.boundingRect(self.innerText)
     return textRect.size()
@@ -52,7 +54,7 @@ class LabelWidget(BaseWidget):
     borderMargins = QMargins(b, b, b, b)
     borderRect = viewRect.marginsRemoved(borderMargins)
     borderRect.moveCenter(viewRect.center())
-    b = self.textBorderPen.width() * 2
+    b = self.textBorderPen.width() * 4
     textBorderMargins = QMargins(b, b, b, b)
     textSpace = borderRect.marginsRemoved(textBorderMargins)
     painter.setRenderHint(QPainter.Antialiasing)
@@ -70,9 +72,8 @@ class LabelWidget(BaseWidget):
     #  Calculate required size for text
     painter.setFont(self.textFont)
     painter.setPen(self.textPen)
-    realTextSize = painter.boundingRect(
-      textSpace, NoWrap, self.innerText).size()
-    textSize = QSize(realTextSize.width() + 6, realTextSize.height())
+    textRect = painter.boundingRect(textSpace, NoWrap, self.innerText)
+    textSize = (textRect + QMargins(8, 1, 8, 1)).size()
     # # # # # # # # # # # # # # # # #
     #  Align text rectangle
     if self.hAlign.lower() == 'center':
@@ -97,8 +98,6 @@ class LabelWidget(BaseWidget):
       raise ValueError(monoSpace(e))
     textTopLeft = QPoint(left, top)
     textRect = QRect(textTopLeft, textSize)
-    realTextRect = QRect(QPoint(0, 0), realTextSize)
-    realTextRect.moveCenter(textRect.center())
     # # # # # # # # # # # # # # # # #
     #  Fill text background
     painter.setPen(self.emptyPen)
@@ -111,9 +110,9 @@ class LabelWidget(BaseWidget):
     painter.drawRect(textRect)
     # # # # # # # # # # # # # # # # #
     #  Print text
-    painter.setFont(self.textFont)
     painter.setPen(self.textPen)
-    painter.drawText(realTextRect, NoWrap, self.innerText)
+    flags = NoWrap | Qt.AlignmentFlag.AlignHCenter
+    painter.drawText(textRect, flags, self.innerText)
     painter.end()
 
   @classmethod

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Label fields should never wrap. That requires more complicated logic">
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Text sizes... always text sizes...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" afterDir="false" />
     </list>
@@ -246,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710252067346</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Text sizes... always text sizes...">
+      <option name="closed" value="true" />
+      <created>1710252670353</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710252670353</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -258,6 +266,7 @@
     <MESSAGE value="Adding missing icons" />
     <MESSAGE value="Setting minimum size on label field" />
     <MESSAGE value="Label fields should never wrap. That requires more complicated logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Label fields should never wrap. That requires more complicated logic" />
+    <MESSAGE value="Text sizes... always text sizes..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Text sizes... always text sizes..." />
   </component>
 </project>
