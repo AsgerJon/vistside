@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Working on widget descriptors">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vistside.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vistside.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_array_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_array_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_data_roll.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_data_roll.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_dynamic_plot_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_dynamic_plot_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/_base_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/windows/_layout_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/windows/_layout_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vistside/core/_pen_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_pen_field.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710154828073</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Working on widget descriptors">
+      <option name="closed" value="true" />
+      <created>1710244634901</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710244634901</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
