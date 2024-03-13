@@ -36,7 +36,10 @@ class LabelWidget(BaseWidget):
     BaseWidget.__init__(self, *args, **kwargs)
     self.innerText = 'Label' if text is None else text
     fontMetrics = QFontMetrics(self.textFont)
-    textRect = fontMetrics.tightBoundingRect(self.innerText)
+    text = self.innerText
+    textOption = NoWrap
+    space = QRect(QPoint(0, 0), QSize(1920, 1080))
+    textRect = fontMetrics.boundingRect(space, textOption, text)
     textSize = (textRect + QMargins(8, 1, 8, 1)).size()
     self.setMinimumSize(textSize)
 
