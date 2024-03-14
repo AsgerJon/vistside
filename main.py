@@ -9,7 +9,7 @@ from time import sleep
 from PySide6.QtWidgets import QApplication
 from icecream import ic
 
-from vistside.core._data_roll import DataRoll
+from vistside.core import DataRoll
 from vistside.windows import BaseWindow, LayoutWindow
 
 ic.configureOutput(includeContext=True)

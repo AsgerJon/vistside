@@ -14,7 +14,7 @@ from vistutils.fields import TextField, Wait, unParseArgs
 
 from vistside.core import FontField, PenField, SolidLine
 from vistside.core import resolveFontFamily, NoWrap
-from vistside.core import BrushField, SolidFill, Yellow
+from vistside.core import BrushField, SolidFill, White
 from vistside.widgets import BaseWidget
 
 
@@ -23,11 +23,11 @@ class LabelWidget(BaseWidget):
   for short names or descriptions rather than longer text."""
 
   innerText = TextField('Label')
-  textFont = FontField('Courier', 18)
-  fillBrush = BrushField(Yellow, SolidFill)
-  borderPen = PenField(QColor(144, 144, 255, 255), 2, SolidLine)
-  textFillBrush = BrushField(QColor(255, 255, 255, 63), SolidFill)
-  textBorderPen = PenField(QColor(0, 0, 0, 63), 1, SolidLine)
+  textFont = FontField('Manjari', 18)
+  fillBrush = BrushField(QColor(144, 255, 63, 255), SolidFill)
+  borderPen = PenField(White, 2, SolidLine)
+  textFillBrush = BrushField(QColor(255, 255, 0, 31), SolidFill)
+  textBorderPen = PenField(White, 1, SolidLine)
   hAlign = TextField('center')
   vAlign = TextField('center')
 
@@ -96,6 +96,7 @@ class LabelWidget(BaseWidget):
       raise ValueError(monoSpace(e))
     textTopLeft = QPoint(left, top)
     textRect = QRect(textTopLeft, textSize)
+    textRect.moveCenter(viewRect.center())
     # # # # # # # # # # # # # # # # #
     #  Fill text background
     painter.setPen(self.emptyPen)
