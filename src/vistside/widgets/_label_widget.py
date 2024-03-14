@@ -8,9 +8,12 @@ from typing import Self
 from warnings import warn
 
 from PySide6.QtCore import QRect, QPoint, QMargins, QSize, Qt
-from PySide6.QtGui import QColor, QPaintEvent, QPainter, QFontMetrics, QFont
-from vistutils.text import monoSpace
+from PySide6.QtGui import (QColor, QPaintEvent, QPainter, QFontMetrics,
+                           QFont, \
+                           QFontDatabase)
+from vistutils.text import monoSpace, stringList
 from vistutils.fields import TextField, Wait, unParseArgs
+from vistutils.waitaminute import typeMsg
 
 from vistside.core import FontField, PenField, SolidLine
 from vistside.core import resolveFontFamily, NoWrap
@@ -23,7 +26,7 @@ class LabelWidget(BaseWidget):
   for short names or descriptions rather than longer text."""
 
   innerText = TextField('Label')
-  textFont = FontField('Manjari', 18)
+  textFont = FontField()
   fillBrush = BrushField(QColor(144, 255, 63, 255), SolidFill)
   borderPen = PenField(White, 2, SolidLine)
   textFillBrush = BrushField(QColor(255, 255, 0, 31), SolidFill)
@@ -31,17 +34,10 @@ class LabelWidget(BaseWidget):
   hAlign = TextField('center')
   vAlign = TextField('center')
 
-  def __init__(self, text: str = None, *args, **kwargs) -> None:
+  def __init__(self, *args, **kwargs) -> None:
     """Initializes the LabelWidget."""
     BaseWidget.__init__(self, *args, **kwargs)
-    self.innerText = 'Label' if text is None else text
-    fontMetrics = QFontMetrics(self.textFont)
-    text = self.innerText
-    textOption = NoWrap
-    space = QRect(QPoint(0, 0), QSize(1920, 1080))
-    textRect = fontMetrics.boundingRect(space, textOption, text)
-    textSize = (textRect + QMargins(8, 1, 8, 1)).size()
-    self.setMinimumSize(textSize)
+    self.apply((*args, kwargs))
 
   def paintEvent(self, event: QPaintEvent) -> None:
     """Paints the widget."""
@@ -123,21 +119,21 @@ class LabelWidget(BaseWidget):
   def apply(self, value: tuple) -> Self:
     """Applies values from arguments"""
     args, kwargs = unParseArgs(value)
-    warn('Setter not fully implemented!')
-    blanks = [None for _ in range(2)]
-    strArgs = [*[arg for arg in args if isinstance(arg, str)], *blanks]
-    intArgs = [*[arg for arg in args if isinstance(arg, int)], *blanks]
-    text, fontFamily = strArgs[:2]
-    fontSize = intArgs[0]
-    if text is not None:
-      self.innerText = text
-    if fontFamily is not None:
-      fontFamily = resolveFontFamily(fontFamily, strict=False)
-      if fontFamily:
-        self.textFont = fontFamily
-    if fontSize is not None:
-      self.textFont = fontSize
-    return self
+    innerText, fontFamily, fontSize = None, None, None
+    for arg in args:
+      if isinstance(arg, str):
+        if innerText is None:
+          innerText = arg
+        elif arg in QFontDatabase.families() and fontFamily is None:
+          fontFamily = arg
+        elif arg.isnumeric() and fontSize is None:
+          fontSize = int(arg)
+    if innerText is not None:
+      if isinstance(innerText, str):
+        self.innerText = innerText
+      else:
+        e = typeMsg('innerText', innerText, str)
+        raise TypeError(e)
 
 
 class LabelField(Wait):

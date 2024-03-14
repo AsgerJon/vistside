@@ -6,6 +6,7 @@ import os
 import sys
 from time import sleep
 
+from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QApplication
 from icecream import ic
 
@@ -25,6 +26,10 @@ def tester00() -> None:
 def tester01() -> None:
   """Hello world"""
   app = QApplication()
+  lmao = QFont()
+  ic(lmao.family())
+  ic(lmao.pointSize())
+  ic(lmao.weight())
   main = LayoutWindow()
   main.show()
   app.exec()
