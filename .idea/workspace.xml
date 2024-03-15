@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Text sizes... always text sizes...">
+    <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Added missing imports for pen and brush">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/__init__.py" afterDir="false" />
     </list>
@@ -310,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710436662055</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added missing imports for pen and brush">
+      <option name="closed" value="true" />
+      <created>1710471051710</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710471051710</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -323,6 +331,7 @@
     <MESSAGE value="Setting minimum size on label field" />
     <MESSAGE value="Label fields should never wrap. That requires more complicated logic" />
     <MESSAGE value="Text sizes... always text sizes..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Text sizes... always text sizes..." />
+    <MESSAGE value="Added missing imports for pen and brush" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added missing imports for pen and brush" />
   </component>
 </project>

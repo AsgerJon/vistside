@@ -18,8 +18,7 @@ from ._color_factory import parseColor
 from ._brush_factory import parseBrush, emptyBrush, solidBrush
 from ._brush_field import BrushField
 from ._pen_factory import parsePen, emptyPen, textPen, solidPen
-from ._pen_factory import SolidLine, DashLine, DotLine, DashDotLine
-from ._pen_factory import DashDotDotLine, NoLine
+from ._pen_factory import stylePen, dashPen, dotPen, dashDotPen
 from ._pen_field import PenField, PenWrap
 from ._font_factory import resolveFontFamily, parseFont
 from ._font_field import FontField, Font
