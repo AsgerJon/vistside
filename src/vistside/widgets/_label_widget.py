@@ -11,11 +11,12 @@ from PySide6.QtCore import QRect, QPoint, QMargins, QSize, Qt
 from PySide6.QtGui import (QColor, QPaintEvent, QPainter, QFontMetrics,
                            QFont, \
                            QFontDatabase)
+from vistutils.parse import maybe
 from vistutils.text import monoSpace, stringList
 from vistutils.fields import TextField, Wait, unParseArgs
 from vistutils.waitaminute import typeMsg
 
-from vistside.core import FontField, PenField, SolidLine
+from vistside.core import FontField, PenField, SolidLine, parseFont
 from vistside.core import resolveFontFamily, NoWrap
 from vistside.core import BrushField, SolidFill, White
 from vistside.widgets import BaseWidget
@@ -33,11 +34,6 @@ class LabelWidget(BaseWidget):
   textBorderPen = PenField(White, 1, SolidLine)
   hAlign = TextField('center')
   vAlign = TextField('center')
-
-  def __init__(self, *args, **kwargs) -> None:
-    """Initializes the LabelWidget."""
-    BaseWidget.__init__(self, *args, **kwargs)
-    self.apply((*args, kwargs))
 
   def paintEvent(self, event: QPaintEvent) -> None:
     """Paints the widget."""
@@ -124,16 +120,17 @@ class LabelWidget(BaseWidget):
       if isinstance(arg, str):
         if innerText is None:
           innerText = arg
-        elif arg in QFontDatabase.families() and fontFamily is None:
-          fontFamily = arg
-        elif arg.isnumeric() and fontSize is None:
-          fontSize = int(arg)
-    if innerText is not None:
-      if isinstance(innerText, str):
-        self.innerText = innerText
-      else:
-        e = typeMsg('innerText', innerText, str)
-        raise TypeError(e)
+        elif fontFamily is None:
+          family = resolveFontFamily(arg, strict=False)
+          if family:
+            fontFamily = family
+      if isinstance(arg, int) and fontSize is None:
+        fontSize = arg
+    self.innerText = maybe(innerText, 'Label')
+    fontFamily = maybe(fontFamily, 'Courier')
+    fontSize = maybe(fontSize, 12)
+    self.textFont = parseFont(fontFamily, fontSize)
+    return self
 
 
 class LabelField(Wait):

@@ -26,10 +26,6 @@ def tester00() -> None:
 def tester01() -> None:
   """Hello world"""
   app = QApplication()
-  lmao = QFont()
-  ic(lmao.family())
-  ic(lmao.pointSize())
-  ic(lmao.weight())
   main = LayoutWindow()
   main.show()
   app.exec()

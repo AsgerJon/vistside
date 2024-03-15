@@ -3,10 +3,11 @@
 #  Copyright (c) 2024 Asger Jon Vistisen
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, Self
 
 from PySide6.QtGui import QFont
 from vistutils.fields import CoreDescriptor, unParseArgs, Wait
+from vistutils.parse import maybe
 from vistutils.text import stringList, monoSpace
 
 from vistside.core import parseFont, resolveFontFamily
@@ -21,11 +22,11 @@ class Font(QFont):
     self.apply((args, kwargs))
 
   @classmethod
-  def getDefault(cls, *args, **kwargs) -> Font:
+  def getDefault(cls, *args, **kwargs) -> Self:
     """Creates a default instance"""
     return cls().apply((args, kwargs))
 
-  def apply(self, value: Any) -> Font:
+  def apply(self, value: Any) -> Self:
     """Applies the value to the field."""
     args, kwargs = unParseArgs(value)
     famKeys = stringList("""family, fontFamily, fontFam""")
@@ -48,9 +49,9 @@ class Font(QFont):
     fontFamily = parsedKwargs.get('family', self.family())
     fontSize = parsedKwargs.get('size', self.pointSize())
     fontWeight = parsedKwargs.get('weight', self.weight())
-    self.setFamily(fontFamily)
-    self.setPointSize(fontSize)
-    self.setWeight(fontWeight)
+    self.setFamily(maybe(fontFamily, 'Courier'))
+    self.setPointSize(maybe(fontSize, 12))
+    self.setWeight(maybe(fontWeight, QFont.Normal))
     return self
 
 
