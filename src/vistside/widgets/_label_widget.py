@@ -26,14 +26,20 @@ class LabelWidget(BaseWidget):
   """LabelWidget provides a widget for displaying labels. This is intended
   for short names or descriptions rather than longer text."""
 
-  innerText = TextField('Label')
-  textFont = FontField()
   fillBrush = BrushField(QColor(144, 255, 63, 255), SolidFill)
   borderPen = PenField(White, 2, SolidLine)
   textFillBrush = BrushField(QColor(255, 255, 0, 31), SolidFill)
   textBorderPen = PenField(White, 1, SolidLine)
-  hAlign = TextField('center')
-  vAlign = TextField('center')
+
+  def __init__(self, *args, **kwargs) -> None:
+    """Initializes the widget."""
+    BaseWidget.__init__(self, *args, **kwargs)
+    self.innerText = [*[i for i in args if isinstance(i, str)], 'Label'][0]
+    self.textFont = QFont()
+    self.textFont.setFamily('Montserrat')
+    self.textFont.setPointSize(18)
+    self.hAlign = 'center'
+    self.vAlign = 'center'
 
   def paintEvent(self, event: QPaintEvent) -> None:
     """Paints the widget."""
@@ -109,28 +115,7 @@ class LabelWidget(BaseWidget):
   @classmethod
   def getDefault(cls, *args, **kwargs) -> Self:
     """Creates default"""
-    labelWidget = cls()
-    return labelWidget.apply((args, kwargs))
-
-  def apply(self, value: tuple) -> Self:
-    """Applies values from arguments"""
-    args, kwargs = unParseArgs(value)
-    innerText, fontFamily, fontSize = None, None, None
-    for arg in args:
-      if isinstance(arg, str):
-        if innerText is None:
-          innerText = arg
-        elif fontFamily is None:
-          family = resolveFontFamily(arg, strict=False)
-          if family:
-            fontFamily = family
-      if isinstance(arg, int) and fontSize is None:
-        fontSize = arg
-    self.innerText = maybe(innerText, 'Label')
-    fontFamily = maybe(fontFamily, 'Courier')
-    fontSize = maybe(fontSize, 12)
-    self.textFont = parseFont(fontFamily, fontSize)
-    return self
+    return cls(*args, **kwargs)
 
 
 class LabelField(Wait):
