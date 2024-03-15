@@ -5,31 +5,31 @@ for short names or descriptions rather than longer text."""
 from __future__ import annotations
 
 from typing import Self
-from warnings import warn
 
-from PySide6.QtCore import QRect, QPoint, QMargins, QSize, Qt
-from PySide6.QtGui import (QColor, QPaintEvent, QPainter, QFontMetrics,
-                           QFont, \
-                           QFontDatabase)
-from vistutils.parse import maybe
-from vistutils.text import monoSpace, stringList
-from vistutils.fields import TextField, Wait, unParseArgs
-from vistutils.waitaminute import typeMsg
+from PySide6.QtCore import QRect, QPoint, QMargins, Qt
+from PySide6.QtGui import (QColor, QPaintEvent, QPainter, QFont, QBrush,
+                           QPen)
+from vistutils.text import monoSpace
+from vistutils.fields import Wait, FieldBox
 
-from vistside.core import FontField, PenField, SolidLine, parseFont
-from vistside.core import resolveFontFamily, NoWrap
+from vistside.core import PenField, SolidLine, Black
+from vistside.core import NoWrap
 from vistside.core import BrushField, SolidFill, White
 from vistside.widgets import BaseWidget
+
+Text = type('_', (str,), {'__new__': lambda _, a: a})
 
 
 class LabelWidget(BaseWidget):
   """LabelWidget provides a widget for displaying labels. This is intended
   for short names or descriptions rather than longer text."""
 
-  fillBrush = BrushField(QColor(144, 255, 63, 255), SolidFill)
-  borderPen = PenField(White, 2, SolidLine)
-  textFillBrush = BrushField(QColor(255, 255, 0, 31), SolidFill)
-  textBorderPen = PenField(White, 1, SolidLine)
+  fillBrush = FieldBox[QBrush](QColor(144, 255, 63, 255), SolidFill)
+  borderPen = FieldBox[QPen](White, 2, SolidLine)
+  textFillBrush = FieldBox[QBrush](QColor(255, 255, 0, 31), SolidFill)
+  textBorderPen = FieldBox[QPen](White, 1, SolidLine)
+  textPen = FieldBox[QPen](Black, 1, SolidLine)
+  innerText = FieldBox[str]()
 
   def __init__(self, *args, **kwargs) -> None:
     """Initializes the widget."""
