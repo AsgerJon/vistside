@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5262ccd-792f-4c6c-9767-b756b723681f" name="Changes" comment="Text sizes... always text sizes...">
-      <change afterPath="$PROJECT_DIR$/src/stylinator/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vistside.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vistside.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vistside/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/core/_font_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/core/_font_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vistside/widgets/_label_widget.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710409862193</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Text sizes... always text sizes...">
+      <option name="closed" value="true" />
+      <created>1710436662055</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710436662055</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
